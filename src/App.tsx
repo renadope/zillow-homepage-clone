@@ -1,6 +1,7 @@
 import Nav from './Nav.tsx'
 import SearchSection from './SearchSection.tsx'
 import { HouseCard, houseListings } from './fake-data/house-card.ts'
+import { cn } from './lib/utils.ts'
 
 function App() {
   return (
@@ -17,13 +18,18 @@ function App() {
             {houseListings &&
               houseListings.length > 0 &&
               houseListings.map((house, i) => {
-                return <Card data={house} key={i} />
+                return (
+                  <Card
+                    data={house}
+                    key={i}
+                  />
+                )
               })}
           </div>
         </div>
         <div className={'mx-auto max-w-7xl px-10'}>
           <div className={'flex items-center justify-center'}>
-            <button className={'mb-5 bg-white p-2 text-lg font-semibold text-sky-700'}>
+            <button className={'bg-white p-4 text-lg font-semibold text-sky-700'}>
               <span> &darr; </span> <span className={'text-center hover:underline'}>More recommended Homes</span>
             </button>
           </div>
@@ -47,7 +53,12 @@ function Card({ data }: { data: HouseCard }) {
       >
         {data.description}
       </span>
-      <img src={data.img} alt="House exterior" className="aspect-video w-full object-cover" loading="lazy" />{' '}
+      <img
+        src={data.img}
+        alt="House exterior"
+        className="aspect-video w-full object-cover"
+        loading="lazy"
+      />{' '}
       <div className={'flex flex-col gap-1 p-4'}>
         <h1 className={'mb-2 text-2xl font-black'}>
           <span>$</span>
@@ -67,7 +78,26 @@ function Card({ data }: { data: HouseCard }) {
           </p>
           <div className="h-4 w-px bg-gray-300 group-hover:bg-sky-300"></div>
 
-          <span className="rounded-full bg-green-100 px-2 py-1 text-sm font-semibold text-green-700 group-hover:animate-pulse group-hover:text-green-900 group-hover:ring-1 group-hover:ring-sky-300">
+          <span
+            data-status={data.status}
+            className={cn(
+              // Base styles
+              'rounded-full bg-green-100 px-2 py-1 text-sm font-semibold text-green-700',
+              // Data attribute styles
+              'data-[status=Active]:group-hover:animate-pulse',
+              'data-[status=Active]:group-hover:text-green-900',
+              'data-[status=Active]:group-hover:ring-1',
+              'data-[status=Active]:group-hover:ring-sky-300',
+              'data-[status=InActive]:bg-red-100',
+              'data-[status=InActive]:text-red-700',
+              'data-[status=InActive]:group-hover:text-red-900',
+              'data-[status=New]:group-hover:animate-pulse',
+              'data-[status=New]:bg-sky-100',
+              'data-[status=New]:group-hover:text-sky-900',
+              'data-[status=New]:group-hover:ring-2',
+              'data-[status=New]:group-hover:ring-sky-300'
+            )}
+          >
             {data.status}
           </span>
         </div>
