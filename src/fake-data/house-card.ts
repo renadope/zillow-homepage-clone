@@ -34,7 +34,7 @@ export const houseListings: HouseCard[] = [
     mlsID: '20242709',
     mlsData: 'CHASE INTERNATIONAL, Sarah Smith',
     description: 'Waterfront Property',
-    img: '/src/assets/house-4.jpg',
+    img: '/src/assets/house-9.jpg',
   },
   {
     price: 425000,
@@ -46,7 +46,7 @@ export const houseListings: HouseCard[] = [
     mlsID: '20242710',
     mlsData: 'DICKSON REALTY, Michael Johnson',
     description: 'Single Family Home',
-    img: '/src/assets/house-6.jpg',
+    img: '/src/assets/house-4.jpg',
   },
   {
     price: 1250000,
