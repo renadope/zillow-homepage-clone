@@ -6,9 +6,9 @@ function App() {
     <div className="font-sans">
       <Nav />
       <SearchSection />
-      <div className={''}>
+      <div>
         <div className={'mx-auto max-w-7xl overflow-scroll px-10'}>
-          <div className={'flex flex-nowrap gap-2 py-12'}>
+          <div className={'flex flex-nowrap gap-4 py-12'}>
             <Card />
             <Card />
             <Card />
@@ -24,13 +24,32 @@ function App() {
   )
 }
 
+type HouseCard = {
+  price: number
+  description: string
+  numBeds: number
+  numBaths: number
+  sqFt: number
+  status: 'Active' | 'InActive'
+  address: string
+  mlsID: string
+  mlsData: string
+}
+
 function Card() {
   return (
     <div
       className={
-        'group max-w-sm flex-shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-sky-50 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-2 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300'
+        'group relative max-w-sm flex-shrink-0 overflow-hidden rounded-xl border-4 border-transparent shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300'
       }
     >
+      <span
+        className={
+          'absolute left-1 top-1.5 mx-1 translate-x-1 translate-y-1.5 truncate rounded-lg bg-red-500 p-1 text-xs font-extrabold text-white'
+        }
+      >
+        Stunning Views
+      </span>
       <img
         src={'/src/assets/house-2.jpg'}
         alt="House exterior"
@@ -53,7 +72,7 @@ function Card() {
           </p>
           <div className="h-4 w-px bg-gray-300 group-hover:bg-sky-300"></div>
 
-          <span className="rounded-full bg-green-100 px-2 py-1 text-sm font-semibold text-green-700 hover:text-green-900">
+          <span className="rounded-full bg-green-100 px-2 py-1 text-sm font-semibold text-green-700 group-hover:text-green-900">
             Active
           </span>
         </div>
