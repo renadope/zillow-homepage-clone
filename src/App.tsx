@@ -1,7 +1,7 @@
 import Nav from './Nav.tsx'
 import SearchSection from './SearchSection.tsx'
 import { HouseCard, houseListings } from './fake-data/house-card.ts'
-import { cn } from './lib/utils.ts'
+import { StatusBadge } from './StatusBadge.tsx'
 
 function App() {
   return (
@@ -78,28 +78,7 @@ function Card({ data }: { data: HouseCard }) {
           </p>
           <div className="h-4 w-px bg-gray-300 group-hover:bg-sky-300"></div>
 
-          <span
-            data-status={data.status}
-            className={cn(
-              // Base styles
-              'rounded-full bg-green-100 px-2 py-1 text-sm font-semibold text-green-700',
-              // Data attribute styles
-              'data-[status=Active]:group-hover:animate-pulse',
-              'data-[status=Active]:group-hover:text-green-900',
-              'data-[status=Active]:group-hover:ring-1',
-              'data-[status=Active]:group-hover:ring-sky-300',
-              'data-[status=InActive]:bg-red-100',
-              'data-[status=InActive]:text-red-700',
-              'data-[status=InActive]:group-hover:text-red-900',
-              'data-[status=New]:group-hover:animate-pulse',
-              'data-[status=New]:bg-sky-100',
-              'data-[status=New]:group-hover:text-sky-900',
-              'data-[status=New]:group-hover:ring-2',
-              'data-[status=New]:group-hover:ring-sky-300'
-            )}
-          >
-            {data.status}
-          </span>
+          <StatusBadge status={data.status} />
         </div>
         <address className={'select-all text-sm font-light not-italic text-gray-600'}>{data.address}</address>
         <div className="select-all border-t pt-2 group-hover:border-sky-300">
