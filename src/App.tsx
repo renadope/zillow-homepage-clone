@@ -20,7 +20,7 @@ function App() {
               </div>
               <div>
                 <input
-                  className={'w-5/12 rounded-xl p-4 shadow-2xl'}
+                  className={'w-5/12 rounded-xl p-4 text-sky-950 shadow-2xl'}
                   placeholder={'Enter an address, neighborhood or Zip Code.'}
                 />
               </div>
