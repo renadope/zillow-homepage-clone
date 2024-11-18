@@ -8,11 +8,24 @@ function App() {
       <Nav />
       <SearchSection />
       <div>
+        <div className={'mx-auto max-w-7xl px-10 pt-10'}>
+          <h2 className={'text-2xl font-extrabold text-sky-950'}> Homes For You</h2>
+          <h3 className={'text-sm text-gray-500'}>Based on homes you recently viewed</h3>
+        </div>
         <div className={'mx-auto max-w-7xl overflow-scroll px-10'}>
-          <div className={'flex flex-nowrap gap-4 py-12'}>
+          <div className={'mb-5 flex flex-nowrap gap-4 py-5'}>
             {houseListings &&
               houseListings.length > 0 &&
-              houseListings.map((house, i) => <Card data={house} key={i} />)}
+              houseListings.map((house, i) => {
+                return <Card data={house} key={i} />
+              })}
+          </div>
+        </div>
+        <div className={'mx-auto max-w-7xl px-10'}>
+          <div className={'flex items-center justify-center'}>
+            <button className={'mb-5 bg-white p-2 text-lg font-semibold text-sky-700'}>
+              <span> &darr; </span> <span className={'text-center hover:underline'}>More recommended Homes</span>
+            </button>
           </div>
         </div>
       </div>
@@ -24,7 +37,7 @@ function Card({ data }: { data: HouseCard }) {
   return (
     <div
       className={
-        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl border-4 border-transparent shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300'
+        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl border-4 border-transparent bg-sky-50 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300'
       }
     >
       <span
