@@ -1,7 +1,9 @@
+import Nav from './Nav.tsx'
+
 function App() {
   return (
-    <div>
-      <p>Hello world</p>
+    <div className="font-sans">
+      <Nav />
     </div>
   )
 }

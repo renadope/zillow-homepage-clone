@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <!-- Sky -->
+    <rect width="400" height="400" fill="#E6F3FF"/>
+
+    <!-- Sun -->
+    <circle cx="320" cy="80" r="30" fill="#FFE5B4"/>
+
+    <!-- Grass -->
+    <rect x="0" y="280" width="400" height="120" fill="#A8E4BC"/>
+
+    <!-- House Base -->
+    <rect x="100" y="160" width="200" height="160" fill="#B0E0E6"/>
+
+    <!-- Roof -->
+    <path d="M80 160 L200 80 L320 160" fill="#4682B4" stroke="#4169E1" stroke-width="2"/>
+
+    <!-- Door -->
+    <rect x="175" y="240" width="50" height="80" fill="#1E4D6B"/>
+    <circle cx="210" cy="280" r="5" fill="#FFD700"/>
+
+    <!-- Windows -->
+    <rect x="125" y="200" width="40" height="40" fill="#ADD8E6"/>
+    <path d="M125 220 H165 M145 200 V240" stroke="white" stroke-width="2"/>
+
+    <rect x="235" y="200" width="40" height="40" fill="#ADD8E6"/>
+    <path d="M235 220 H275 M255 200 V240" stroke="white" stroke-width="2"/>
+
+    <!-- Chimney -->
+    <rect x="250" y="100" width="20" height="40" fill="#1E4D6B"/>
+    <rect x="245" y="95" width="30" height="10" fill="#2B5F82"/>
+
+    <!-- Smoke -->
+    <path d="M255 85 C265 75, 275 65, 265 55 C255 45, 245 35, 255 25"
+          fill="none" stroke="#E6E6FA" stroke-width="3"/>
+
+    <!-- Flowers -->
+    <g transform="translate(80,300)">
+        <line x1="0" y1="0" x2="0" y2="-20" stroke="#2E8B57" stroke-width="2"/>
+        <circle cx="0" cy="-25" r="5" fill="#E0FFFF"/>
+        <circle cx="5" cy="-22" r="5" fill="#B0E0E6"/>
+        <circle cx="-5" cy="-22" r="5" fill="#87CEEB"/>
+    </g>
+
+    <g transform="translate(320,300)">
+        <line x1="0" y1="0" x2="0" y2="-20" stroke="#2E8B57" stroke-width="2"/>
+        <circle cx="0" cy="-25" r="5" fill="#E0FFFF"/>
+        <circle cx="5" cy="-22" r="5" fill="#B0E0E6"/>
+        <circle cx="-5" cy="-22" r="5" fill="#87CEEB"/>
+    </g>
+</svg>

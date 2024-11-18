@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+    <!-- House Icon -->
+    <g transform="translate(10,10)">
+        <!-- Abstract House Shape -->
+        <path d="M40 50 L10 50 L40 20 L70 50 L40 50"
+              fill="none"
+              stroke="#4A90E2"
+              stroke-width="4"
+              stroke-linejoin="round"/>
+        <path d="M35 50 L45 50 L45 70 L35 70 Z"
+              fill="#4A90E2"/>
+    </g>
+
+    <!-- Company Name -->
+    <text x="100" y="60"
+          font-family="Arial, sans-serif"
+          font-size="42"
+          font-weight="bold"
+          letter-spacing="1"
+          fill="#2C3E50">
+        dwelling
+    </text>
+
+    <!-- Dot Accent -->
+    <circle cx="330" cy="55" r="4" fill="#4A90E2"/>
+
+    <!-- Tagline -->
+    <text x="100" y="80"
+          font-family="Arial, sans-serif"
+          font-size="14"
+          letter-spacing="2"
+          fill="#666666">
+        REAL ESTATE SIMPLIFIED
+    </text>
+</svg>
