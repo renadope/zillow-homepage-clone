@@ -1,17 +1,22 @@
 import { HouseCard } from './fake-data/house-card.ts'
 import { StatusBadge } from './StatusBadge.tsx'
+import { cn } from './lib/utils.ts'
 
 export function Card({ data }: { data: HouseCard }) {
   return (
     <div
-      className={
-        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl border-4 border-transparent bg-sky-50 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300'
-      }
+      className={cn(
+        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl bg-sky-50 shadow-xl',
+        'border-4 border-transparent',
+        'hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300',
+        'transition-all duration-300'
+      )}
     >
       <span
-        className={
-          'absolute left-1 top-1.5 mx-1 translate-x-1 translate-y-1.5 truncate rounded-lg bg-red-500 p-1 text-xs font-extrabold text-white'
-        }
+        className={cn(
+          'absolute left-1 top-1.5 mx-1 translate-x-1 translate-y-1.5 truncate',
+          'rounded-lg bg-red-500 p-1 text-xs font-extrabold text-white'
+        )}
       >
         {data.description}
       </span>
