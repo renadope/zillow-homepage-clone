@@ -15,13 +15,13 @@ function App() {
         subHeading={'Based on homes you recently viewed'}
       />
       <div className={'mx-auto max-w-7xl px-10'}>
-        <div className={'flex justify-center'}>
+        <div className={'mb-10 flex justify-center'}>
           <button className={'bg-white p-4 text-lg font-semibold text-sky-700'}>
             <span> &darr; </span> <span className={'text-center hover:underline'}>More recommended Homes</span>
           </button>
         </div>
       </div>
-      <section className={'bg-gray-50'}>
+      <section className={'bg-gray-100'}>
         <div className={'mx-auto max-w-7xl px-10'}>
           <div className={'flex justify-center gap-4 py-20'}>
             <InfoCard
@@ -68,7 +68,7 @@ function InfoCard({
     <div
       className={cn(
         'flex flex-1 flex-col px-4',
-        'bg-sky-50 hover:bg-sky-100',
+        'bg-sky-50',
 
         'rounded-3xl border-4 border-sky-200 shadow-lg shadow-sky-200',
         'hover:-translate-y-1.5 hover:border-sky-500 hover:shadow-xl hover:shadow-sky-300',
@@ -84,8 +84,8 @@ function InfoCard({
       <p className={'mx-auto mb-10 text-center text-gray-600'}>{words}</p>
       <button
         className={cn(
-          'mx-auto mb-20 mt-auto rounded-lg px-4 py-2 ring-1 ring-sky-300',
-          'hover:bg-sky-100 hover:shadow-2xl hover:shadow-sky-300 hover:ring-2',
+          'mx-auto mb-20 mt-auto rounded-lg px-4 py-2 ring-2 ring-sky-300',
+          'hover:bg-sky-100 hover:shadow-2xl hover:shadow-sky-300 hover:ring-4',
           'transition-all duration-300'
         )}
       >
