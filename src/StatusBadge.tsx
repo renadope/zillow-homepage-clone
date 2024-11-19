@@ -22,6 +22,7 @@ const statusVariants: Record<StatusType, string> = {
   ),
   New: cn(
     'group-hover:animate-pulse',
+    'text-sky-700',
     'bg-sky-100',
     'group-hover:text-sky-900',
     'group-hover:ring-2',
