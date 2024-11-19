@@ -15,25 +15,82 @@ function App() {
         subHeading={'Based on homes you recently viewed'}
       />
       <div className={'mx-auto max-w-7xl px-10'}>
-        <div className={'flex items-center justify-center'}>
+        <div className={'flex justify-center'}>
           <button className={'bg-white p-4 text-lg font-semibold text-sky-700'}>
             <span> &darr; </span> <span className={'text-center hover:underline'}>More recommended Homes</span>
           </button>
         </div>
       </div>
-      {/*<div className={'bg-sky-500'}>*/}
-      {/*  <div className={'mx-auto max-w-7xl px-10'}>*/}
-      {/*    <p>*/}
-      {/*      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur ducimus enim est fugiat*/}
-      {/*      iste laudantium maiores nemo nihil, officiis omnis perspiciatis quidem rem, sit voluptates! Ad animi commodi*/}
-      {/*      ducimus libero molestiae quis rerum tempora voluptas. Aliquid animi, culpa delectus deserunt ea facere*/}
-      {/*      fugiat inventore ipsum iste magni possimus qui recusandae repellat sint, soluta suscipit totam. Aspernatur*/}
-      {/*      id libero nisi, officiis provident quis quisquam sit? Asperiores assumenda culpa cum dolorem eaque eius*/}
-      {/*      enim, facilis fuga ipsum labore libero nam natus optio pariatur quae recusandae saepe sit veritatis voluptas*/}
-      {/*      voluptatibu! Aliquam cum facere facilis fuga minus non odio quisquam tempora veritatis.z*/}
-      {/*    </p>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
+      <section className={'bg-gray-50'}>
+        <div className={'mx-auto max-w-7xl px-10'}>
+          <div className={'flex justify-center gap-4 py-20'}>
+            <InfoCard
+              header={'Buy a home'}
+              words={
+                ' A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.'
+              }
+              img={'/src/assets/innovation-amico.svg'}
+              buttonWords={'Find a local agent now'}
+            />
+            <InfoCard
+              header={'Finance a home'}
+              words={
+                'Zillow Home Loans can get you pre-approved so youre ready to make an offer quickly when you find the right home.'
+              }
+              buttonWords={'Start now'}
+              img={'/src/assets/innovation-bro.svg'}
+            />
+            <InfoCard
+              header={'Sell a home'}
+              words={'No matter what path you take to sell your home, we can help you navigate a successful sale.'}
+              buttonWords={'See your options'}
+              img={'/src/assets/laval-lamp.svg'}
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+function InfoCard({
+  header,
+  words,
+  buttonWords,
+  img,
+}: {
+  header: string
+  words: string
+  buttonWords: string
+  img: string
+}) {
+  return (
+    <div
+      className={cn(
+        'flex flex-1 flex-col px-4',
+        'bg-sky-50 hover:bg-sky-100',
+
+        'rounded-3xl border-4 border-sky-200 shadow-lg shadow-sky-200',
+        'hover:-translate-y-1.5 hover:border-sky-500 hover:shadow-xl hover:shadow-sky-300',
+        'odd:hover:translate-x-1.5 even:hover:-translate-x-1.5',
+        'transition-all duration-300'
+      )}
+    >
+      <img
+        src={img}
+        className={'mx-auto my-10 size-32'}
+      />
+      <h1 className={'mx-auto mb-5 text-3xl font-bold text-sky-950'}>{header}</h1>
+      <p className={'mx-auto mb-10 text-center text-gray-600'}>{words}</p>
+      <button
+        className={cn(
+          'mx-auto mb-20 mt-auto rounded-lg px-4 py-2 ring-1 ring-sky-300',
+          'hover:bg-sky-100 hover:shadow-2xl hover:shadow-sky-300 hover:ring-2',
+          'transition-all duration-300'
+        )}
+      >
+        <span className={'text-sky-950'}>{buttonWords}</span>
+      </button>
     </div>
   )
 }
