@@ -68,9 +68,9 @@ function HouseCardRow({
           <div className={'flex min-w-48'}>
             <button
               className={cn(
-                'my-auto ml-5 rounded-lg px-4 py-1 ring-2 ring-sky-300',
+                'my-auto ml-5 rounded-lg px-4 py-1 ring-1 ring-sky-300',
                 'transition-all duration-300',
-                'hover:-translate-y-0.5 hover:bg-sky-50 hover:shadow-2xl hover:shadow-sky-300'
+                'hover:-translate-y-0.5 hover:bg-sky-50 hover:shadow-2xl hover:shadow-sky-300 hover:ring-2'
               )}
             >
               <span className={'font-medium text-sky-950'}>See more &rarr;</span>
