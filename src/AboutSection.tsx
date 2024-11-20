@@ -2,8 +2,8 @@ import { SeeMoreButton } from './SeeMoreButton.tsx'
 
 export function AboutSection() {
   return (
-    <section className={'border-b-2 border-sky-300 bg-gradient-to-br from-sky-100 to-sky-50'}>
-      <div className={'mx-auto max-w-7xl px-10'}>
+    <section className={'bg-gradient-to-br from-sky-100 to-sky-50'}>
+      <div className={'mx-auto max-w-7xl border-b-2 border-sky-300 px-10'}>
         <div className={'flex flex-col gap-2'}>
           <div className={'p-10'}>
             <h6 className={'mb-5 text-center text-xl font-semibold text-sky-950'}>About dwelling's recommendations.</h6>

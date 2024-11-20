@@ -20,6 +20,9 @@ const links = [
   'Terms of use',
 ]
 
+const links2 = ['Privacy Portal', 'Cookie Preference', 'Learn', 'AI', 'Mobile Apps']
+const links3 = ['Trulia', 'StreetEasy', 'HotPads', 'Out East', 'ShowingTime+']
+
 function App() {
   return (
     <div className="font-sans">
@@ -54,10 +57,16 @@ function App() {
         subHeading={'Continue looking at these similar homes'}
       />
       <AboutSection />
-      <section>
-        <div className={'mx-auto max-w-7xl px-10'}>
-          <div className={'flex flex-col'}></div>
-          <FooterLinks links={links} />
+      <section className={''}>
+        <div className={'mx-auto max-w-7xl border-b-2 border-sky-500 px-10'}>
+          <div className={'flex flex-col gap-3 py-16'}>
+            <FooterLinks links={links} />
+            <FooterLinks links={links2} />
+            <FooterLinks links={links3} />
+            <button className={'mt-2 text-lg text-sky-600 transition-all duration-300 hover:underline'}>
+              Do Not Sell or Share My Personal Information &rarr;
+            </button>
+          </div>
         </div>
       </section>
     </div>
@@ -66,15 +75,16 @@ function App() {
 
 function FooterLinks({ links }: { links: string[] }) {
   return (
-    <div className={'flex flex-wrap justify-center gap-2 py-10'}>
+    <div className={'flex flex-wrap justify-center gap-2'}>
       {links &&
         links.length > 0 &&
         links.map((item, i) => {
           return (
             <p
               className={cn(
-                `cursor-pointer text-sm text-gray-500 hover:text-sky-700`,
-                `${i !== links.length - 1 ? 'border-r border-sky-200 pr-2' : ''}`
+                `cursor-pointer text-sm text-gray-500 hover:text-sky-700 hover:underline`,
+                `${i !== links.length - 1 ? 'border-r border-sky-200 pr-2' : ''}`,
+                `odd:hover:text-sky-500`
               )}
               key={i}
             >
