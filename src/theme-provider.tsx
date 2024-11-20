@@ -5,18 +5,13 @@ export type Theme =
   | 'light'
   | 'system'
   | 'synthwave'
-  | 'cyberpunk'
   | 'miami'
   | 'terminal'
   | 'ocean'
   | 'nordic'
   | 'space'
   | 'neon-tokyo'
-  | 'luxury'
   | 'cotton-candy'
-  | 'rainbow'
-  | 'barca-light'
-  | 'barca-dark'
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -58,7 +53,6 @@ export function ThemeProvider({
       'nordic',
       'space',
       'neon-tokyo',
-      'luxury',
       'cotton-candy'
     )
 

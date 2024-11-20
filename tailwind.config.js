@@ -5,6 +5,10 @@ export default {
     extend: {
       colors: {
         background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        muted: 'hsl(var(--muted) / <alpha-value>)',
+        primary: 'hsl(var(--primary) / <alpha-value>)',
+        accent: 'hsl(var(--accent) / <alpha-value>)',
       },
     },
   },
