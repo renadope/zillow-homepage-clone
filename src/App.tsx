@@ -69,6 +69,52 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className={'bg-gradient-to-br from-sky-100 to-sky-50'}>
+        <div className={'mx-auto max-w-7xl px-10'}>
+          <div className={'flex flex-col gap-6'}>
+            <div className={'mx-auto mt-10 max-w-4xl text-center'}>
+              <p className={'text-xs leading-relaxed text-gray-500'}>
+                Dwellings Group is committed to ensuring digital accessibility for individuals with disabilities. We are
+                continuously working to improve the accessibility of our web experience for everyone, and we welcome
+                feedback and accommodation requests. If you wish to report an issue or seek an accommodation, please let
+                us know.
+              </p>
+            </div>
+            <div className={'flex flex-col gap-1'}>
+              <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
+                <p>
+                  Zillow, Inc. holds real estate brokerage licenses in multiple states. Zillow (Canada), Inc. holds real
+                  estate brokerage licenses in multiple provinces.
+                </p>
+              </div>
+              <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
+                <p>§ 442-H New York Standard Operating Procedures</p>
+              </div>
+              <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
+                <p>§ New York Fair Housing Notice</p>
+              </div>
+              <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
+                <p>TREC: Information about brokerage services, Consumer protection notice</p>
+              </div>
+              <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
+                <p>California DRE #1522444</p>
+              </div>
+            </div>
+            <div className={'mx-auto max-w-4xl text-center text-sm text-sky-900 underline'}>
+              <p>Contact Dwellings, Inc. Brokerage</p>
+            </div>
+            <div className={'mx-auto mb-10 max-w-4xl text-center text-xs text-gray-500'}>
+              <p>
+                For listings in Canada, the trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by
+                The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of
+                CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and
+                identify the quality of services provided by real estate professionals who are members of CREA. Used
+                under license.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
