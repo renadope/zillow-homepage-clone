@@ -5,6 +5,7 @@ import { AboutSection } from './AboutSection.tsx'
 import { HouseCardRow } from './HouseCardRow.tsx'
 import { Features } from './Features.tsx'
 import { Footer } from './Footer.tsx'
+import { shuffleArray } from './lib/utils.ts'
 
 function App() {
   return (
@@ -30,12 +31,12 @@ function App() {
         subHeading={'Based on homes you recently viewed'}
       />
       <HouseCardRow
-        listings={houseListings}
+        listings={[...houseListings].reverse()}
         heading={'Homes For You'}
         subHeading={'Based on homes you recently viewed'}
       />
       <HouseCardRow
-        listings={houseListings}
+        listings={shuffleArray(houseListings)}
         heading={'Check out these homes'}
         subHeading={'Continue looking at these similar homes'}
       />
