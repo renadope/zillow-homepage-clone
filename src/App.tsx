@@ -76,28 +76,43 @@ function App() {
               <p className={'text-xs leading-relaxed text-gray-500'}>
                 Dwellings Group is committed to ensuring digital accessibility for individuals with disabilities. We are
                 continuously working to improve the accessibility of our web experience for everyone, and we welcome
-                feedback and accommodation requests. If you wish to report an issue or seek an accommodation, please let
-                us know.
+                feedback and accommodation requests. If you wish to report an issue or seek an accommodation,
+                <span className={'text-sky-900 underline hover:text-sky-950'}> please let us know</span>.
               </p>
             </div>
             <div className={'flex flex-col gap-1'}>
               <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
                 <p>
-                  Zillow, Inc. holds real estate brokerage licenses in multiple states. Zillow (Canada), Inc. holds real
-                  estate brokerage licenses in multiple provinces.
+                  Zillow, Inc. holds real estate brokerage{' '}
+                  <span className={'text-sky-900 underline hover:text-sky-950'}>licenses</span> in multiple states.
+                  Zillow (Canada), Inc. holds real estate brokerage{' '}
+                  <span className={'text-sky-900 underline hover:text-sky-950'}>licenses</span> in multiple provinces.
                 </p>
               </div>
               <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
-                <p>§ 442-H New York Standard Operating Procedures</p>
+                <p>
+                  §{' '}
+                  <span className={'text-sky-900 underline hover:text-sky-950'}>
+                    442-H New York Standard Operating Procedures
+                  </span>
+                </p>
               </div>
               <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
-                <p>§ New York Fair Housing Notice</p>
+                <p>
+                  § <span className={'text-sky-900 underline hover:text-sky-950'}>New York Fair Housing Notice</span>
+                </p>
               </div>
               <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
-                <p>TREC: Information about brokerage services, Consumer protection notice</p>
+                <p>
+                  TREC:{' '}
+                  <span className={'text-sky-900 underline hover:text-sky-950'}>
+                    Information about brokerage services
+                  </span>
+                  , <span className={'text-sky-900 underline hover:text-sky-950'}>Consumer protection notice</span>
+                </p>
               </div>
               <div className={'mx-auto max-w-4xl text-center text-xs text-gray-500'}>
-                <p>California DRE #1522444</p>
+                <p>Still D.R.E #1522444</p>
               </div>
             </div>
             <div className={'mx-auto max-w-4xl text-center text-sm text-sky-900 underline'}>
