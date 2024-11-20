@@ -2,7 +2,7 @@ import { InfoCard } from './InfoCard.tsx'
 
 export function Features() {
   return (
-    <section className={'bg-gray-100'}>
+    <section className={'bg-gradient-to-r from-sky-100 to-sky-50'}>
       <div className={'mx-auto max-w-7xl px-10'}>
         <div className={'flex justify-center gap-4 py-20'}>
           <InfoCard

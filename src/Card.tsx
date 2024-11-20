@@ -6,7 +6,7 @@ export function Card({ data }: { data: HouseCard }) {
   return (
     <div
       className={cn(
-        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl bg-sky-50 shadow-xl',
+        'group relative max-w-xs flex-shrink-0 overflow-hidden rounded-xl bg-neutral-50 shadow-xl',
         'border-4 border-transparent',
         'hover:-translate-y-1 hover:border-4 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-300',
         'transition-all duration-300'

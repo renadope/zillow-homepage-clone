@@ -15,8 +15,7 @@ export function InfoCard({
     <div
       className={cn(
         'flex flex-1 flex-col px-4',
-        'bg-sky-50',
-
+        'bg-neutral-50',
         'rounded-3xl border-4 border-sky-200 shadow-lg shadow-sky-200',
         'hover:-translate-y-1.5 hover:border-sky-500 hover:shadow-xl hover:shadow-sky-300',
         'odd:hover:translate-x-1.5 even:hover:-translate-x-1.5',
