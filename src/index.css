@@ -3,75 +3,75 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --background: 0 0% 98%;
-        --foreground: 220 25% 25%;
-        --muted: 220 15% 90%;
-        --primary: 220 60% 50%;
-        --accent: 280 65% 60%;
-    }
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 25% 25%;
+    --muted: 220 15% 90%;
+    --primary: 220 60% 50%;
+    --accent: 280 65% 60%;
+  }
 
-    .dark {
-        --background: 240 10% 3.9%;
-        --foreground: 0 0% 98%;
-        --muted: 240 3.7% 15.9%;
-        --primary: 0 0% 98%;
-        --accent: 240 3.7% 15.9%;
-    }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --primary: 0 0% 98%;
+    --accent: 240 3.7% 15.9%;
+  }
 
-    .synthwave {
-        --background: 260 25% 11%;
-        --foreground: 260 60% 98%;
-        --muted: 260 25% 16%;
-        --primary: 280 100% 50%;
-        --accent: 300 100% 50%;
-    }
+  .synthwave {
+    --background: 260 25% 11%;
+    --foreground: 260 60% 98%;
+    --muted: 260 25% 16%;
+    --primary: 280 100% 50%;
+    --accent: 300 100% 50%;
+  }
 
-    .terminal {
-        --background: 0 0% 0%;
-        --foreground: 120 100% 80%;
-        --muted: 0 0% 10%;
-        --primary: 120 100% 40%;
-        --accent: 120 100% 40%;
-    }
+  .terminal {
+    --background: 0 0% 0%;
+    --foreground: 120 100% 80%;
+    --muted: 0 0% 10%;
+    --primary: 120 100% 40%;
+    --accent: 120 100% 40%;
+  }
 
-    .miami {
-        --background: 180 10% 95%;
-        --foreground: 180 50% 3%;
-        --muted: 180 50% 85%;
-        --primary: 335 85% 55%;
-        --accent: 190 95% 45%;
-    }
+  .miami {
+    --background: 180 10% 95%;
+    --foreground: 180 50% 3%;
+    --muted: 180 50% 85%;
+    --primary: 335 85% 55%;
+    --accent: 190 95% 45%;
+  }
 
-    .ocean {
-        --background: 215 50% 12%;
-        --foreground: 215 20% 98%;
-        --muted: 215 40% 20%;
-        --primary: 200 95% 50%;
-        --accent: 180 90% 50%;
-    }
+  .ocean {
+    --background: 215 50% 12%;
+    --foreground: 215 20% 98%;
+    --muted: 215 40% 20%;
+    --primary: 200 95% 50%;
+    --accent: 180 90% 50%;
+  }
 
-    .nordic {
-        --background: 220 25% 97%;
-        --foreground: 220 35% 15%;
-        --muted: 220 15% 85%;
-        --primary: 220 60% 45%;
-        --accent: 280 30% 45%;
-    }
+  .nordic {
+    --background: 220 25% 97%;
+    --foreground: 220 35% 15%;
+    --muted: 220 15% 85%;
+    --primary: 220 60% 45%;
+    --accent: 280 30% 45%;
+  }
 
-    .neon-tokyo {
-        --background: 230 50% 10%;
-        --foreground: 320 100% 95%;
-        --muted: 230 40% 20%;
-        --primary: 320 100% 60%;
-        --accent: 180 100% 50%;
-    }
+  .neon-tokyo {
+    --background: 230 50% 10%;
+    --foreground: 320 100% 95%;
+    --muted: 230 40% 20%;
+    --primary: 320 100% 60%;
+    --accent: 180 100% 50%;
+  }
 
-    .cotton-candy {
-        --background: 315 30% 96%;
-        --foreground: 315 40% 15%;
-        --muted: 315 20% 85%;
-        --primary: 280 80% 65%;
-        --accent: 180 80% 75%;
-    }
+  .cotton-candy {
+    --background: 315 30% 96%;
+    --foreground: 315 40% 15%;
+    --muted: 315 20% 85%;
+    --primary: 280 80% 65%;
+    --accent: 180 80% 75%;
+  }
 }
